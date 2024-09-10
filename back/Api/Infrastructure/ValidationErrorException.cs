@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace Api.Infraestrutura;
+namespace Api.Infrastructure;
 
 public class ValidationErrorException : Exception
 {

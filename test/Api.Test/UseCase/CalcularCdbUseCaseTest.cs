@@ -1,6 +1,6 @@
 using Api.Domain.Interfaces;
-using Api.Infraestrutura;
-using Api.Infraestrutura.ExternalApi;
+using Api.Infrastructure;
+using Api.Infrastructure.ExternalApi;
 using Api.UseCases;
 using FluentAssertions;
 using Moq;

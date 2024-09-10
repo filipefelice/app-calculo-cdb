@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Infraestrutura;
+namespace Api.Infrastructure;
 
 internal sealed class ErrorHandler() : IExceptionHandler
 {

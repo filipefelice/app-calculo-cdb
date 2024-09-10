@@ -1,6 +1,6 @@
 using Api.Domain.Entities;
 using Api.Domain.Exceptions;
-using Api.Infraestrutura.ExternalApi;
+using Api.Infrastructure.ExternalApi;
 using Api.UseCases;
 using FluentAssertions;
 

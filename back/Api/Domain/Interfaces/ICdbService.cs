@@ -1,4 +1,4 @@
-﻿using Api.Infraestrutura.ExternalApi;
+﻿using Api.Infrastructure.ExternalApi;
 
 namespace Api.Domain.Interfaces;
 

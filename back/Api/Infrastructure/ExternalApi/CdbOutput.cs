@@ -1,4 +1,4 @@
-﻿namespace Api.Infraestrutura.ExternalApi;
+﻿namespace Api.Infrastructure.ExternalApi;
 
 public class CdbOutput
 {

@@ -2,7 +2,7 @@
 using Polly.Extensions.Http;
 using Polly.Timeout;
 
-namespace Api.Infraestrutura
+namespace Api.Infrastructure
 {
     public static class HttpClientRetryPolicy
     {

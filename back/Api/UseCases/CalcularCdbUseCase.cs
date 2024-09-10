@@ -1,6 +1,6 @@
 ﻿using Api.Domain.Entities;
 using Api.Domain.Interfaces;
-using Api.Infraestrutura;
+using Api.Infrastructure;
 using MediatR;
 
 namespace Api.UseCases;

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Api.Domain.Interfaces;
 
-namespace Api.Infraestrutura.ExternalApi;
+namespace Api.Infrastructure.ExternalApi;
 
 public class CdbService: ICdbService {
 
