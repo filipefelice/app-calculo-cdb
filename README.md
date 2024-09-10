@@ -23,7 +23,7 @@ Você pode rodar o projeto direto da sua máquina.
 > Pré-requisitos
 
 1 - [Node.js](https://nodejs.org/en/download/package-manager/) superior a 12 instalada. <br />
-2 - [Docker](https://www.docker.com/products/docker-desktop/) <br />
+2 - [Docker](https://www.docker.com/products/docker-desktop/) <br/>
 3 - [.Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
 
 > Rodar
