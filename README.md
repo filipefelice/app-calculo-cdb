@@ -28,7 +28,19 @@ Você pode rodar o projeto direto da sua máquina.
 
 > Rodar
 
-1 - Faça o clone deste projeto no github <br />
+1 - Abra o prompt de comando e faça o clone do projeto no github <br />
+```sh
+git clone https://github.com/filipefelice/app-calculo-cdb.git
+```
+
 2 - Acesse a pasta do projeto <br />
-3 - docker compose up -d --build <br />
+```sh
+cd app-calculo-cdb
+```
+
+3 - Digite o comando <br />
+```sh
+docker compose up -d --build 
+```
+
 4 - Acesse a aplicação através do endereço http://localhost:8090 
