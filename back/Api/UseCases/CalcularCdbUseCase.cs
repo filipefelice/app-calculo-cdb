@@ -13,11 +13,11 @@ public class CalcularCdbUseCase(
 
     public async Task<CalcularCdbResponse> Handle(CalcularCdbRequest request, CancellationToken cancellationToken)
     {
-        var validator = _validator.Validate(request);
+        var validation = _validator.Validate(request);
 
-        if (!validator.IsValid)
+        if (!validation.IsValid)
         {
-            throw new ValidationErrorException(validator.Errors);
+            throw new ValidationErrorException(validation.Errors);
         }
 
         var cdb = await _cdbServiceClient.ObterTaxaCdb();

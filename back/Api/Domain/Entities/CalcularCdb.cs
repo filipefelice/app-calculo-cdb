@@ -83,6 +83,7 @@ public class CalcularCdb
         DomainExceptionValidation.When(ValorAporteInicial <= 0, "Valor aporte inicial não pode ser negativo.");
         DomainExceptionValidation.When(QuantidadeMeses == 0, "Quantidade de meses deve ser informada.");
         DomainExceptionValidation.When(QuantidadeMeses < 2, "Quantidade de meses não pode ser menos que 2 meses.");
+        DomainExceptionValidation.When(QuantidadeMeses > 500, "Quantidade de meses não suportada.");
         DomainExceptionValidation.When(Cdi == 0, "Taxa cdi deve ser informada.");
         DomainExceptionValidation.When(TaxaBancaria == 0, "Taxa bancária deve ser informada.");
     }

@@ -1,9 +1,12 @@
 using Api.Domain.Interfaces;
 using Api.Infrastructure;
 using Api.Infrastructure.ExternalApi;
+using Api.Infrastructure.ExternalApi.Config;
 using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Polly;
 
@@ -17,7 +20,9 @@ var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(10);
 // Add services
 builder.Services.AddHttpClient<ICdbService, CdbService>()
                 .AddPolicyHandler(HttpClientRetryPolicy.GetRetryPolicy())
-                .AddPolicyHandler(timeoutPolicy);
+.AddPolicyHandler(timeoutPolicy);
+
+builder.Services.Configure<CdbConfig>(options => builder.Configuration.GetSection("CdbConfig").Bind(options));
 
 builder.Services.AddSwaggerGen(c =>
 {
